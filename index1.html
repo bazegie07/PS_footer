@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+    <style>
+            * {
+                box-sizing: inherit;
+            }
+            style {
+                display: none;
+            }
+            html {
+                line-height: 1.15;
+                -webkit-text-size-adjust: 100%;
+                font: 100%/1.45 'georgia',serif;
+                box-sizing: border-box;
+                overflow-y: scroll;
+            }
+
+            @media (min-width: 1024px){
+
+                .drBAPd {
+                margin-top: -55px;
+                    }
+                }
+
+                @media (min-width: 1023px){
+                
+                .drBAPd {
+                    width: 100%;
+                    margin: 0px auto;
+                }
+            }
+
+            @media (min-width: 768px){
+
+                .drBAPd {
+                margin: 0px 7%;
+                }
+            }
+            .drBAPd {
+                color: rgb(64, 64, 64);
+                margin: 0px 20px;
+            }
+            .row {
+                box-sizing: border-box;
+                display: flex;
+                flex: 0 1 auto;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-right: -1rem;
+                margin-left: -1rem;
+            }
+            article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+                display: block;
+            }
+            section {
+                display: block;
+            }
+
+            .wrapper {
+                box-sizing: border-box;
+                font-feature-settings: "kern", "clig", "calt";
+                font-variant-ligatures: no-common-ligatures;
+                width: 100%;
+                max-width: 1600px;
+                margin: 0px auto;
+            }
+
+            body {
+                color: hsla(0,0%,0%,0.8);
+                font-family: 'georgia',serif;
+                font-weight: normal;
+                word-wrap: break-word;
+                font-kerning: normal;
+                -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+                -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+                -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+                font-feature-settings: "kern", "liga", "clig", "calt";
+            }
+            div {
+                display: block;
+            }
+
+
+            .drBAPd.variation-a .footer-logo {
+                height: 52px;
+                width: 144px;
+                object-fit: contain;
+            }
+
+            .gqsKUR {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                margin-bottom: 0px;
+                display: block;
+            }
+            img {
+                border-style: none;
+                max-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                margin-bottom: 1.45rem;
+            }
+
+            .gcuHDm {
+                line-height: 18px;
+                letter-spacing: 1.4px;
+                text-align: left;
+                color: rgb(50, 0, 74);
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            a {
+                line-height: 18px;
+                letter-spacing: 1.4px;
+                text-align: left;
+                color: rgb(74, 13, 102);
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+            }
+            a:-webkit-any-link {
+                color: -webkit-link;
+                cursor: pointer;
+            }
+
+            .drBAPd {
+                color: rgb(64, 64, 64);
+                margin: 0px 20px;
+            }
+
+            .drBAPd.variation-a .addressCard {
+                color: rgb(64, 64, 64);
+                padding: 10px;
+            }
+
+            .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+                padding: 0;
+            }
+
+            @media only screen and (min-width: 64em){
+                .col-md-3 {
+                flex-basis: 25%;
+                max-width: 25%;
+                }
+            }
+
+            @media only screen and (min-width: 64em){
+                .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+                box-sizing: border-box;
+                flex: 0 0 auto;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                }
+            }
+
+            .col-xs-12 {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+            .drBAPd.variation-a .hoursOfOperation {
+                color: rgb(64, 64, 64);
+                padding: 10px;
+            }
+
+            .drBAPd.variation-a .primaryLinks {
+                padding: 10px;
+            }
+
+            @media only screen and (min-width: 64em){
+                .col-md-2 {
+                flex-basis: 16.667%;
+                max-width: 16.667%;
+                }
+            }
+
+            .drBAPd.variation-a .bottomLinks {
+                padding: 0px;
+            }
+
+            @media only screen and (min-width: 64em){
+            .col-md-9 {
+                flex-basis: 75%;
+                max-width: 75%;
+            }
+        }
+
+        @media (min-width: 1023px){
+
+        .drBAPd.variation-a .social-icons {
+            text-align: right;
+        }
+    }
+
+
+
+
+
+
+    </style>
+    <section class=" htKpzu  globalFooter wrapper bg-dark text-white pt-5 pb-4 globalFooter">
+        <section class=" drBAPd footer molecule row variation-a container text-center text-md-left">
+            <div class="logo_image col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 row text-center text-md-left" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="/" class="sc-1ux5mjm-0 gcuHDm" target="_self" data-analytics-type="footer-logo" data-analytics-variation="Variation-A"><img alt="PetSuites-FooterLogo" srcset="https://images.ctfassets.net/rt5zmd3ipxai/47hF6kJ3NYLKGG8u5L8fKa/3d3171b0aabd89d015375bbf2deafc66/PetSuites-FooterLogo.png" sizes="100vw" class="eu5zgc-0 gqsKUR footer-logo" data-analytics-type="footer-logo" data-analytics-variation="Variation-A"><link itemprop="url" href="https://images.ctfassets.net/rt5zmd3ipxai/47hF6kJ3NYLKGG8u5L8fKa/3d3171b0aabd89d015375bbf2deafc66/PetSuites-FooterLogo.png"></a>
+            </div>
+            <div class="addressCard col-xs-12 col-md-3">
+                <div class="contactCard" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <div class="ty7941-0 egXyzg col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <a href="https://maps.google.com/maps?cid=17874293270052035422" class="sc-1ux5mjm-0 gcuHDm" target="_blank" rel="noopener noreferrer" itemprop="url" data-analytics-type="address-box" data-analytics-value="" data-analytics-variation="Variation-A" title="5495 N Hamilton Rd., 
+                            Columbus, 
+                            OH, 
+                            43230" copyrighttext="PetSuites Gahanna">
+                            <p class="ovnq1p-0 cLpOUX heading_three">
+                                PetSuites Gahanna
+                            </p>
+                            <address class="sc-1xxkgde-0 ejqIdb address-block">
+                                <span itemprop="streetAddress" class="addressLine1">
+                                    5495 N Hamilton Rd.
+                                </span>
+                                <span itemprop="addressLocality" class="city">
+                                    Columbus
+                                </span>
+                                , 
+                                <span itemprop="addressRegion" class="state">
+                                    OH
+                                </span>
+                                <span itemprop="postalCode" class="postalCode">
+                                    43230
+                                </span>
+                            </address>
+                        </a>
+                    </div>
+                    <div class="w7n4ml-0 hVXgDb">
+                        <ul class="w7248b-1 ftDQGA w7248b-2 dFTwOr contact-details panel-list">
+                            <li class="sc-1dimaqi-0 dovoA">
+                                <p class="ovnq1p-0 cLpOUX">T:</p>
+                                <a href="tel:6143288944" class="sc-1ux5mjm-0 gcuHDm phone-link" target="_self" aria-label="phone (614) 328-8944"><p class="ovnq1p-0 cLpOUX" itemprop="telephone">(614) 328-8944</p></a>
+                            </li>
+                            <li class="sc-1dimaqi-0 dovoA">
+                                <p class="class="ovnq1p-0 cLpOUX>:F</p>
+                                <a href="tel:+16144787304" class="sc-1ux5mjm-0 gcuHDm phone-link" target="_self" aria-label="fax (614) 478-7304"><p class="ovnq1p-0
+                                    cLpOUX" itemprop="faxNumber">(614) 478-7304</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hoursOfOperation col-xs-12 col-md-3">
+                <div class="yfqjgu-0 RSGaO">
+                    <p class="ovnq1p-0 cLpOUX hoursText heading_three" aria-label="Hours of Operation">House of Operation</p>
+                    <div id="default-tab" class="ykh7ny-0 cdLQQY hours-detail">
+                        <div class="tabs-wrap">
+                            <ul role="tablist" class="w7248b-1 ftDQGA w7248b-2 dFTwOr">
+                                <li class="sc-88mbb3-0 kTzKDV  hour-details-tab" role="tab" aria-controls="tab-list-item-0" aria-selected="true" id="tab_0" tabindex="0">
+                                    <a href="#tab-list-item-0" class="sc-1ux5mjm-0 gcuHDm tab-link" target="_self">
+                                        <p class="ovnq1p-0 cLpOUX heading_five">Main Hours</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panels-wrap">
+                            <div id="tab-list-item-0" class="yr2uqf-0 gFVtRY" role="tabpanel" aria-expanded="true" aria-hidden="false" aria-labelledby="tab_0">
+                                <ul class="w7248b-1 ftDQGA w7248b-2 dFTwOr panel-list">
+                                    <li class="sc-1dimaqi-0 dovoA" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                                        <p class="ovnq1p-0 cLpOUX left">
+                                            <link rel="stylesheet" href="">Mon
+                                            <div>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                        <span itemprop="opens" content="6:30:00">
+                                                        6:30am 
+                                                        </span>
+                                                        <span itemprop="closes" content="20:00:00">
+                                                        -   8:00pm
+                                                        </span>
+                                                    </p>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                    </p>
+                                                </div>
+                                        </p>
+                                    </li>
+                                    <li class="sc-1dimaqi-0 dovoA" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                                        <p class="ovnq1p-0 cLpOUX left">
+                                            <link rel="stylesheet" href="">Mon
+                                            <div>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                        <span itemprop="opens" content="6:30:00">
+                                                        6:30am 
+                                                        </span>
+                                                        <span itemprop="closes" content="20:00:00">
+                                                        -   8:00pm
+                                                        </span>
+                                                    </p>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                    </p>
+                                                </div>
+                                        </p>
+                                    </li>
+                                    <li class="sc-1dimaqi-0 dovoA" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                                        <p class="ovnq1p-0 cLpOUX left">
+                                            <link rel="stylesheet" href="">Mon
+                                            <div>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                        <span itemprop="opens" content="6:30:00">
+                                                        6:30am 
+                                                        </span>
+                                                        <span itemprop="closes" content="20:00:00">
+                                                        -   8:00pm
+                                                        </span>
+                                                    </p>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                    </p>
+                                                </div>
+                                        </p>
+                                    </li>
+                                    <li class="sc-1dimaqi-0 dovoA" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                                        <p class="ovnq1p-0 cLpOUX left">
+                                            <link rel="stylesheet" href="">Mon
+                                            <div>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                        <span itemprop="opens" content="6:30:00">
+                                                        6:30am 
+                                                        </span>
+                                                        <span itemprop="closes" content="20:00:00">
+                                                        -   8:00pm
+                                                        </span>
+                                                    </p>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                    </p>
+                                                </div>
+                                        </p>
+                                    </li>
+                                    <li class="sc-1dimaqi-0 dovoA" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                                        <p class="ovnq1p-0 cLpOUX left">
+                                            <link rel="stylesheet" href="">Mon
+                                            <div>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                        <span itemprop="opens" content="6:30:00">
+                                                        6:30am 
+                                                        </span>
+                                                        <span itemprop="closes" content="20:00:00">
+                                                        -   8:00pm
+                                                        </span>
+                                                    </p>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                    </p>
+                                                </div>
+                                        </p>
+                                    </li>
+                                    <li class="sc-1dimaqi-0 dovoA" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                                        <p class="ovnq1p-0 cLpOUX left">
+                                            <link rel="stylesheet" href="">Mon
+                                            <div>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                        <span itemprop="opens" content="6:30:00">
+                                                        6:30am 
+                                                        </span>
+                                                        <span itemprop="closes" content="20:00:00">
+                                                        -   8:00pm
+                                                        </span>
+                                                    </p>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                    </p>
+                                                </div>
+                                        </p>
+                                    </li>
+                                    <li class="sc-1dimaqi-0 dovoA" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                                        <p class="ovnq1p-0 cLpOUX left">
+                                            <link rel="stylesheet" href="">Mon
+                                            <div>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                        <span itemprop="opens" content="6:30:00">
+                                                        6:30am 
+                                                        </span>
+                                                        <span itemprop="closes" content="20:00:00">
+                                                        -   8:00pm
+                                                        </span>
+                                                    </p>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                    </p>
+                                                </div>
+                                        </p>
+                                    </li>
+                                    <li class="sc-1dimaqi-0 dovoA" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                                        <p class="ovnq1p-0 cLpOUX left">
+                                            <link rel="stylesheet" href="">Mon
+                                            <div>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                        <span itemprop="opens" content="6:30:00">
+                                                        6:30am 
+                                                        </span>
+                                                        <span itemprop="closes" content="20:00:00">
+                                                        -   8:00pm
+                                                        </span>
+                                                    </p>
+                                                    <p class="ovnq1p-0 cLpOUX">
+                                                    </p>
+                                                </div>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="primaryLinks col-xs-12 col-md-2">
+                    <div class="miniFooterCTA">
+                        <a href="/reservation" class="sc-1ux5mjm-0 cUVdBo" target="_self" aria-label="Book Now">
+                            Book Now
+                        </a>
+                    </div>
+                    <ul class="w7248b-1 ftDQGA w7248b-2 dFTwOr">
+                    </ul>
+                </div>
+            <div class="line-separator col-xs-12"></div>
+            <div class="col-md-9 bottomLinks">
+                    <div class="row linksRow">
+                        <div class="copyright col-xs-12 col-md-3 col-lg-4">
+                            <div class="heading_five heading-5 no-bar">
+                                © <!-- --> <!-- -->Copyright<!-- --> <!-- -->2020
+                            </div>
+                        </div>
+                        <div class="utilityLinks col-xs-12 col-md-9 col-lg-8">
+                            <ul class="w7248b-1 ftDQGA w7248b-2 dFTwOr">
+                                <li class="sc-1dimaqi-0 dovoA">
+                                    <div class="heading_five heading-5 no-bar">
+                                        <a href="/terms-conditions" class="sc-1ux5mjm-0 gcuHDm" target="_self" data-analytics-type="footer-secondary" data-analytics-variation="Variation-A">
+                                            Terms &amp; Conditions
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="sc-1dimaqi-0 dovoA">
+                                    <div class="heading_five heading-5 no-bar">
+                                        <a href="/privacy-policy" class="sc-1ux5mjm-0 gcuHDm" target="_self" data-analytics-type="footer-secondary" data-analytics-variation="Variation-A">
+                                            Privacy Policy
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="sc-1dimaqi-0 dovoA">
+                                    <div class="heading_five heading-5 no-bar">
+                                        <a href="https://www.petsuitesofamerica.com/locations" class="sc-1ux5mjm-0 gcuHDm" target="_blank" rel="noopener noreferrer" data-analytics-type="footer-secondary" data-analytics-variation="Variation-A">
+                                            Other Locations
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="sc-1dimaqi-0 dovoA">
+                                    <div class="heading_five heading-5 no-bar">
+                                        <a href="/faqs" class="sc-1ux5mjm-0 gcuHDm" target="_self" data-analytics-type="footer-secondary" data-analytics-variation="Variation-A">
+                                            FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="sc-1dimaqi-0 dovoA">
+                                    <div class="heading_five heading-5 no-bar">
+                                        <a href="/careers" class="sc-1ux5mjm-0 gcuHDm" target="_self" data-analytics-type="footer-secondary" data-analytics-variation="Variation-A">
+                                            Careers	</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright col-xs-12 col-md-3">
+                        <section class="sc-1lai8ft-0 dXEjex social-icons">
+                            <section class="ht50ix-0 hygKNq">
+                                <a href="https://www.facebook.com/PetSuitesGahanna/" class="sc-1ux5mjm-0 gcuHDm" target="_blank" rel="noopener noreferrer" data-analytics-type="icon-social-feed" data-analytics-value="Facebook" data-analytics-variation="Variation-A" aria-label="Facebook profile for PetSuites Gahanna">
+                                    <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 7.4 16" style="enable-background:new 0 0 7.4 16" xml:space="preserve">
+                                        <g id="FB"><path id="Icon" d="M1.6,16h3.3V8h2.2l0.3-2.7H4.9V3.8C4.9,3.1,5,2.7,6,2.7h1.4V0H5.2C2.6,0,1.6,1.3,1.6,3.6v1.6H0V8h1.6V16L1.6,16z
+                            ">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </section>
+                            <section class="ht50ix-0 hygKNq">
+                                <a href="https://www.instagram.com/petsuites_gahanna/" class="sc-1ux5mjm-0 gcuHDm" target="_blank" rel="noopener noreferrer" data-analytics-type="icon-social-feed" data-analytics-value="Instagram" data-analytics-variation="Variation-A" aria-label="Instagram profile for PetSuites Gahanna">
+                                    <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 14.1 14.1" style="enable-background:new 0 0 14.1 14.1" xml:space="preserve">
+                                        <g id="Instagram">
+                                            <path id="Icon" d="M12.4,0H1.8C0.8,0,0,0.8,0,1.7c0,0,0,0,0,0.1v10.6c0,1,0.8,1.8,1.7,1.8c0,0,0,0,0.1,0h10.6c1,0,1.8-0.8,1.8-1.7
+                            c0,0,0,0,0-0.1V1.8C14.2,0.8,13.4,0,12.4,0C12.4,0,12.4,0,12.4,0z M7.1,4.3c1.5,0,2.7,1.3,2.7,2.8c0,1.5-1.3,2.7-2.8,2.7
+                            C5.4,9.7,4.2,8.5,4.2,7C4.3,5.5,5.5,4.3,7.1,4.3z M12.4,11.9c0,0.3-0.1,0.4-0.4,0.4H2.2c-0.3,0-0.4-0.1-0.4-0.4V5.7L2.9,6
+                            C2.7,6.4,2.7,6.8,2.7,7.2c0.1,2.4,2.1,4.3,4.5,4.3c2.3-0.1,4.2-1.9,4.3-4.3c0-0.4-0.1-0.8-0.2-1.2l1.1-0.2L12.4,11.9L12.4,11.9z
+                             M12.4,4c0,0.2-0.2,0.4-0.4,0.4h-1.8C9.9,4.4,9.7,4.2,9.7,4V2.2c0-0.2,0.2-0.4,0.4-0.4h1.8c0.2,0,0.4,0.2,0.4,0.4L12.4,4L12.4,4z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </section>
+                            <section class="ht50ix-0 hygKNq"><a href="https://www.linkedin.com/company/petsuites/" class="sc-1ux5mjm-0 gcuHDm" target="_blank" rel="noopener noreferrer" data-analytics-type="icon-social-feed" data-analytics-value="Linked In" data-analytics-variation="Variation-A" aria-label="Linked In profile for PetSuites Gahanna"><svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 15.2 14.5" style="enable-background:new 0 0 15.2 14.5" xml:space="preserve"><g id="Linkedin">
+                                <path id="LinkedIn-2" d="M15.2,8.9v5.6H12V9.3c0-1.3-0.5-2.2-1.6-2.2c-0.8,0-1.4,0.5-1.7,1.2C8.6,8.5,8.5,8.8,8.5,9v5.5H5.3
+                            c0,0,0-8.9,0-9.8h3.3v1.4l0,0h0v0c0.6-1,1.7-1.7,2.9-1.6C13.6,4.5,15.2,5.9,15.2,8.9z M1.9,0C1-0.1,0.1,0.6,0,1.5s0.6,1.8,1.5,1.9
+                            c0.1,0,0.2,0,0.4,0h0c0.9,0.1,1.8-0.6,1.9-1.5C3.9,1,3.2,0.1,2.3,0C2.1,0,2,0,1.9,0L1.9,0z M0.3,14.5h3.3V4.7H0.3V14.5z">
+                                </path>
+                                </g>
+                                </svg>
+                                </a>
+                            </section>
+                        </section>
+                    </div>
+        </section>
+    </section>
+</body>
+</html>
