@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -54,6 +56,7 @@
             }
 
             a {
+                font-family: "nunito sans";
                 line-height: 18px;
                 letter-spacing: 0.2px;
                 text-align: left;
@@ -72,9 +75,9 @@
                 padding-left: 0;
                 padding-right: 0;
                 padding-top: 0;
-                margin-bottom: 1.45rem;
+                margin-bottom: 0.3rem;
               	font-size:16px;
-              color:black !important;
+                color:black !important;
               	
             }
  .mdb-color {
@@ -84,12 +87,14 @@
       h6{
       	font-size:28px;
         color: #404040;
+        font-family: "CopseRegular", serif ! important;
       }
 
             
       li{
-      	font-size:11px;
+      	font-size:13px;
         color: #404040;
+        cursor: pointer;
       }
          #copy{
       	font-size:12px;
@@ -98,7 +103,7 @@
       
  
       i{
-      color:#4a0d66;
+      color:#fff;
       }
 
       #miniFooterCTA {
@@ -106,9 +111,69 @@
         padding:15px 30px;
         background:#4a0d66;
         color: #ffff !important;
-        font-family: "nunitoBold"
+        font-family: "nunito sans";
+        Font-size: 16px ! important;
+        letter-spacing: 1.4px;
+        line-height: 18px;
+        text-align: left;
+    }
+      
+      @media (min-width: 1024px){
+        #miniFooterCTA {
+        min-height: 48px;
+        padding: 15px 30px;
+        }
+      }
+      .hygKNq {
+        height: 30px;
+        width: 30px;
+        position: relative;
+        background-color: rgb(252, 252, 252) !important;
+        display: inline-block;
+        border-radius: 100%;
+    }
+    .hygKNq svg {
+        fill: rgb(74, 13, 102);
+        vertical-align: middle;
+        display: inline-block;
+        height: 15px;
+        max-width: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
+      .gcuHDm {
+        line-height: 18px;
+        letter-spacing: 1.4px;
+        text-align: left;
+        color: rgb(74, 13, 102);
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+                }
+    
+      .day{
+      	margin-right: 15px;
+        width: 68px;
+        white-space: nowrap;
+      }
+      .heading_three{
+        font-family: CopseRegular, serif;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.44px;
+        font-weight: bold;
+      }
+
+      .add{
+        margin-bottom: 1.45rem;
+      }
+
+      span{
+        font-family: "nunito sans";
+      }
 
     </style>
 
@@ -135,14 +200,14 @@
             <hr class="w-100 clearfix d-md-none">
       
             <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class=" mb-4 ">PetSuites Gahanna</h6>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class=" mb-4 heading_three">PetSuites Gahanna</h6>
               <p>
-                <i class=""></i>5495 N Hamilton Rd. Columbus, OH 43230</p>
+                <a href="https://maps.google.com/maps?cid=17874293270052035422" class="add"><i class=""></i>5495 N Hamilton Rd.<br> <span>Columbus, OH 43230</span></p></a>
       				<p>
-                <i class=""></i> T:(614)382-6043</p>
+                <a href="tel:6143826043" target="_self" aria-label="phone (614)3826043"><i class=""></i> T:(614)382-6043</p></a>
               <p>
-                <i class=""></i> F:(614)478-7304</p>
+                <a href="tel:6144687304" target="_self" aria-label="phone (614)4787304"><i class=""></i> F:(614)478-7304</p></a>
 
             </div>
             <!-- Grid column -->
@@ -150,28 +215,42 @@
             <hr class="w-100 clearfix d-md-none">
       
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mt-3">
-              <h6 class=" mb-4 ">Hours of Operation</h6>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class=" mb-4 heading_three">Hours of Operation</h6>
               <p>
-                		<a href="#!">Mon 6:30am-8:00pm</a>
+                	<a  class="day" href="#!">Mon</a>
+                	<span>6:30</span>
+                	<span>- 8:00pm</span>
               </p>
               <p>
-                    <a href="#!">Tue 6:30am-8:00pm</a>
+                  <a class="day" href="#!">Tue</a>
+                	<span>6:30</span>
+                	<span>- 8:00pm</span>
               </p>
               <p>
-                    <a href="#!">Wed 6:30am-8:00pm</a>
+                  <a class="day" href="#!">Wed</a>
+                	<span>6:30</span>
+                	<span>- 8:00pm</span>
               </p>
               <p>
-                    <a href="#!">Thu 6:30am-8:00pm</a>
+                  <a class="day" href="#!">Thu</a>
+                	<span>6:30</span>
+                	<span>- 8:00pm</span>
               </p>
               <p>
-                    <a href="#!">Fri 6:30am-8:00pm</a>
+                  <a class="day" href="#!">Fri</a>
+                	<span>6:30</span>
+                	<span>- 8:00pm</span>
               </p>
               <p>
-                    <a href="#!">Sat 6:30am-8:00pm</a>
+                  <a class="day" href="#!">Sat</a>
+                	<span>6:30</span>
+                	<span>- 8:00pm</span>
               </p>
               <p>
-                   <a href="#!">Sun 6:30am-8:00pm</a>
+                  <a class="day" href="#!">Sun</a>
+                	<span>6:30</span>
+                	<span>- 8:00pm</span>
               </p>
              
             </div>
@@ -191,51 +270,51 @@
           <hr>
       
           <!-- Grid row -->
-          <div class="row d-flex align-items-center">
+          <div class="row d-flex align-items-left">
       
             <!-- Grid column -->
             <div class="col-md-4 col-lg-4 ml-lg-0">
       
               <!--Copyright-->
-              <p  id="copy" class="col-xs-12 col-md-9 col-lg-8 text-center text-md-left">© 2020 Copyright
+              <p  id="copy" class="col-xs-12 col-md-9 col-lg-6 text-center text-md-left">© 2020 Copyright
                 
               </p>
               
       
             </div>
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-5 ml-lg-0">
+            <div class="col-md-4 col-lg-6 ml-lg-0">
               <div class="text-center text-md-center">
                   <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">Terms & Conditions</li>
-                <li class="list-inline-item">Privacy Policy</li>
-                <li class="list-inline-item">Other Locations</li>
-                  <li class="list-inline-item">FAQ</li>
-                  <li class="list-inline-item">Careers</li>
+                <a href="/terms-conditions" class="list-inline-item"><li>Terms & Conditions</li></a>
+                <a href="/privacy-policy" class="list-inline-item"><li>Privacy Policy</li></a>
+                <a href="https://www.petsuitesofamerica.com/locations" class="list-inline-item"><li >Other Locations</li></a>
+                <a href="/faqs" class="list-inline-item"><li>FAQ</li></a>
+                <a href="/careers" class="list-inline-item"><li>Careers</li></a>
               </ul>
             </div>
             </div>
             
       
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 ml-lg-0">
+            <div class="col-md-4 col-lg-2 ml-lg-0">
       
               <!-- Social buttons -->
               <div class="text-center text-md-right social">
                 <ul class="list-unstyled list-inline" >
-                  <li class="list-inline-item ">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1 gcuHDm">
-                      <i class="fab fa-facebook-f gcuHDm"></i>
+                  <li class="list-inline-item hygKNq">
+                    <a href="https://www.facebook.com/PetSuitesGahanna/" class="btn-floating btn-sm rgba-white-slight mx-1 gcuHDm">
+                      <i class="fab fa-facebook-f svg"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-google-plus-g"></i>
+                  <li class="list-inline-item hygKNq">
+                    <a href="https://www.instagram.com/petsuites_gahanna/" class="btn-floating btn-sm rgba-white-slight mx-1 gcuHDm ">
+                        <i class="fab fa-instagram svg"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-linkedin-in"></i>
+                  <li class="list-inline-item hygKNq">
+                    <a href="https://www.linkedin.com/company/petsuites/" class="btn-floating btn-sm rgba-white-slight mx-1 gcuHDm ">
+                      <i class="fab fa-linkedin-in svg"></i>
                     </a>
                   </li>
                 </ul>
