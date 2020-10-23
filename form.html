@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+        <style>
+        .reservation-h2 {
+             text-align:center;
+             display: block;
+             margin-top: 20px;
+        }
+        .reservation-intro {
+             width:66%;
+             display: block;
+             margin: 20px auto;
+        }
+        section.sc-1e3qabv-0.gQKTtf {
+            width: 66%;
+            margin: 20px auto;
+            padding: 0;
+        }
+        #reservation .form-heading {
+             display:none;
+        }
+        #reservation .success-message, .jpzEwm .error-message {
+            margin-bottom: 20px!important;
+        }
+        
+        #reservation input, #reservation textarea {
+            margin-right: 2%;
+            padding: 5px;
+        }
+        #reservation input {
+            border-width: 0px 0px 1px 0px;
+        }
+        #reservation input.full {
+            width: 98%!important;
+            float: left;
+        }
+        
+        #reservation input.half, div.half {
+            width: 48%!important;
+            float: left;
+            margin-right: 2%;
+        }
+        
+        #reservation input, #reservation input.date, #reservation select {
+            margin: 10px 2% 10px 0;
+            padding: 5px;
+        }
+        label {
+             display:inline-block;
+             font-size: 16px!important;
+             font-family: font-family: CopseRegular, serif;!important;
+             font-weight: bold;
+             padding:20px 15px 0px 0px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+             display: inline-block;
+             width: auto;
+             height: auto;
+             margin: 10px;
+        }
+        input.validate {
+             visibility:hidden;
+        }
+        .clear {
+             clear: both;
+        }
+        @media only screen and (max-width: 850px) {
+        #reservation input.half, div.half, #reservation input.full {
+            width: 100%!important;
+        }
+        }
+        </style>
+        <div id="reservation">
+        <h2 class="reservation-h2">Reservation Form</h2>
+        <div class="reservation-intro"><p>Please note, submitting this form does not guarantee a reservation. You can also call us directly to confirm your reservation immediately!</p></div>
+        
+        <form action="https://formkeep.com/f/67e39f64522b"
+        accept-charset="UTF-8"
+        enctype="multipart/form-data"
+        method="POST">
+        <input type="hidden" name="utf8" value="✓">
+        
+        <h2 class="form-h2">General Information</h2>
+        <input type="text" class="half" id="firstName" name="First Name *" placeholder="First Name*" required>
+        
+        <input type="text" class="half" id="lastName" name="Last Name *" placeholder="Last Name*" required>
+        
+        <input type="email" class="half" id="email-address" name="Email *" placeholder="Email*" required>
+        
+        <input type="text" class="half" id="phone" name="Phone" placeholder="Phone">
+        
+        <label>Existing Client?*</label>
+        <input type="radio" id="customerType" name="customerType" value="yes-existing" required>Yes
+        <input type="radio" id="customerType" name="customerType" value="no-new">No
+        <div class="clear"></div>
+          <div class="half">
+        <label>How did you hear about us?*</label>
+        <select fieldType="select" name="How did you hear about us?" id="howFound" onchange="showfield(this.options[this.selectedIndex].value)" required>
+          <option value="Internet Search">Internet Search</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Mailing">Mailing</option>
+          <option value="Brochure">Brochure</option>
+          <option value="Yellow Pages">Yellow Pages</option>  
+          <option value="Friend Coworker">Friend or Coworker</option>
+          <option value="Article">News or Magazine Article</option>
+          <option value="Advertisement">Advertisement</option>
+          <option value="4 Paws Swim and Fitness">4 Paws Swim and Fitness</option>
+          <option value="Westside Family Pet Clinic">Westside Family Pet Clinic</option>
+          <option value="Pet Corner Grand Opening">Pet Corner Grand Opening</option>
+          <option value="Other">Other</option>
+        </select>
+        <div id="div1"></div>
+
+        </div>
+        <div class="clear"></div>
+        
+        <div class="half">
+        <label>Reservation Date Start*</label>
+        <input type="date" id="fromdate" class="date" name="Check-in Date"><br/>
+        <label>Check-In Time*</label>
+        <input type="radio" id="M-F7-10" name="checkintime" value="M-F: 7:00 - 10:00am" required>M-F: 7:00 - 10:00am
+        <input type="radio" id="M-F4-6" name="checkintime" value="M-F: 4:00 - 6:00pm">M-F: 4:00 - 6:00pm
+        <input type="radio" id="Sat9-11" name="checkintime" value="Sat: 9:00 - 11:00am">Sat: 9:00 - 11:00am
+        <input type="radio" id="Sat4-6" name="checkintime" value="Sat: 4:00 - 6:00pm">Sat: 4:00 - 6:00pm
+        <input type="radio" id="Sun-4-6" name="checkintime" value="Sun: 4:00 - 6:00pm">Sun: 4:00 - 6:00pm
+        </div>
+        <div class="half">
+        <label>Reservation Date End*</label>
+        <input type="date" id="todate" class="date" name="Check-out Date"><br/>
+          <label>Check-Out Time*</label>
+        <input type="radio" id="M-F7-10" name="checkouttime" value="M-F: 7:00 - 10:00am" required>M-F: 7:00 - 10:00am
+        <input type="radio" id="M-F4-6" name="checkouttime" value="M-F: 4:00 - 6:00pm">M-F: 4:00 - 6:00pm
+        <input type="radio" id="Sat9-11" name="checkouttime" value="Sat: 9:00 - 11:00am">Sat: 9:00 - 11:00am
+        <input type="radio" id="Sat4-6" name="checkouttime" value="Sat: 4:00 - 6:00pm">Sat: 4:00 - 6:00pm
+        <input type="radio" id="Sun-4-6" name="checkouttime" value="Sun: 4:00 - 6:00pm">Sun: 4:00 - 6:00pm
+        </div>  
+        <div class="clear">
+        <div class="half" id="room-type">
+        <label>Room Preference*</label>
+        <input type="radio" name="roomtype" value="Bungalow" required>Bungalow
+        <input type="radio" name="roomtype" value="Villa" >Villa
+          <input type="radio" name="roomtype" value="Central Bark Lounge" >Central Bark Lounge
+          <input type="radio" name="roomtype" value="Pooches in Pajamas" >Pooches in Pajamas
+          <input type="radio" name="roomtype" value="Suite" >Suite
+          <input type="radio" name="roomtype" value="Club Aspen" >Club Aspen
+          <input type="radio" name="roomtype" value="Ambassador Suite" >Ambassador Suite
+          <input type="radio" name="roomtype" value="Patio Suite" >Patio Suite
+          <input type="radio" name="roomtype" value="Vail Retreat" >Vail Retreat
+          <input type="radio" name="roomtype" value="Presidential Suite" >Presidential Suite
+        </div>   
+        <div class="clear"></div>
+        <h2 class="form-h2">Dog Information</h2>
+        <div class="half">
+          <input type="text" id="petName1" name="Dog Name:" placeholder="Dog Name:*">
+          <input type="text" id="petBreed1" name="Breed:" placeholder="Breed:*">
+          <input type="text" id="petAge1" name="Age:" placeholder="Age:*">
+          Gender
+          <select fieldType="select" name="Gender 1" id="gender1" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          </select>
+          Spay / Neutered?
+          <select fieldType="select" name="Spay-Neutered" id="spay-neuter" required>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          </select>
+        </div>
+         <label>Checking-in more than one dog?</label> 
+         <input type="checkbox" id="multilpleDogs" name="multiple Dogs" value="Yes">Yes
+        
+        <textarea fieldType="textarea" class="full" id="message" name="Special Needs/Comments?"> </textarea>
+        
+        <div class="clear"></div>
+        <h2 class="form-h2">Optional Pawmenities</h2>
+        
+        <div class="half">
+        <label>Optional Pawmenities:</label>
+          <input type="checkbox" name="Walk" value="Walk">Walk
+          <input type="checkbox" name="Daycare" value="Daycare">Daycare
+          <input type="checkbox" name="Specialty Treats" value="Specialty Treats">Specialty Treats
+          <input type="checkbox" name="Private Play Time" value="Private Play Time">Private Play Time
+          <input type="checkbox" name="Full Bath" value="Full Bath">Full Bath (complimentary with...
+          <input type="checkbox" name="Yappy Hour Frozen Treat" value="Yappy Hour Frozen Treat">Yappy Hour Frozen Treat
+          <input type="checkbox" name="Private Cuddle Time" value="Private Cuddle Time">Private Cuddle Time
+          <input type="checkbox" name="Nail Trim" value="Nail Trim">Nail Trim
+          <input type="checkbox" name="Frozen Peanut Butter Kong" value="Frozen Peanut Butter Kong">Frozen Peanut Butter Kong
+          </div>
+        
+        <div class="clear"></div>
+        
+        <button type="submit">Submit</button>
+        </form>
+          </div>
+          
+          <script type="text/javascript">
+            function showfield(name){
+	            if(name == 'Other') {
+		            document.getElementById('div1').innerHTML = 'Other: <input type="text" name="other" />';
+	            }
+	            else {
+		                document.getElementById('div1').innerHTML='';
+	                }	
+            }
+        </script>                   
+</body>
+
+
+</html>
